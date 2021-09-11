@@ -36,7 +36,7 @@ def receive_request_tcbgcpfinal(request):
         return 'Error, please contact the system administrator.'
 
 def cria_usuario_moodle(email,nome,sobrenome):
-
+        # Runtime environment variables 
         token = os.environ.get('MOODLE_TOKEN')
         servidor = os.environ.get('MOODLE_SERVER')
         api_key =  os.environ.get('API_KEY')
